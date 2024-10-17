@@ -102,58 +102,47 @@ textarea {
     body { 
       font-family: 'open sans', sans-serif;
       font-size: 1em;
-      line-height: 1.875em;
-
+      text-align: left;
+      color: e2e3ed;
     }
 
     ul, ol { 
       list-style-type: disc;
+      margin: 0;
+      padding: 0;
     }
 
     a {
       text-decoration: none;
       color: #e2e3ed;
-
     }
 
     h2 {
       font-family: 'Poppins', sans-serif;
       font-size: 1.875em;
-      line-height: 1.875em;
-
+      font-weight: 500;
     }
 
     h3, h4 {
       font-family: 'Poppins', sans-serif;
       font-size: 1.125em;
-
-
+      font-weight: 500;
+      margin: 20px 0;
     }
 
     p {
       font-size: 0.875em;
       line-height: 1.125em;
-
-
-    }
-
-    img {
-
-    }
-
-    figure {
-
     }
 
     address {
       font-style: normal;
-
     }
 
     .contect-wrapper {
-
+      width: 90%;
+      margin: 50px 0;
     }
-
 
    /*--------------- Base Header - Footer Styles ---------------*/
    
@@ -161,6 +150,7 @@ textarea {
     display: flex;
     justify-content: center;
     padding: 15px 0;
+    background-color: #202322;
    }
 
    header .content-wrapper {
@@ -175,10 +165,14 @@ textarea {
     width: 100%;
     height: 1px;
     margin: 10px 0 20px 0;
+    background-color: #3a3a3a;
     }
 
    header nav {
       width: 60%;
+      font-size: 1.125em;
+      font-weight: bold;
+      text-transform: uppercase;
     }
 
    header nav ul{
@@ -187,11 +181,16 @@ textarea {
     width: 100%;
    }
 
+   header nav ul li {
+    font-size: 1.125em;
+   }
+
    footer { 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: #202322;
     }
 
    footer p {
@@ -233,11 +232,23 @@ textarea {
       justify-content: center;
     }
 
+    .hero-area h1 {
+      font-size: 2.25em;
+      font-family: 'Poppins', Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      line-height: 1.125em;
+    }
+
     /* Aside */
 
     aside {
       display: flex;
       justify-content: center;
+      background-color: #527158;
+    }
+
+    aside .form {
+      margin-top: 30px;
     }
 
     /* Features */
@@ -264,6 +275,7 @@ textarea {
     }
     
     .features p {
+      text-align: center;
       margin: 0;
     }
 
@@ -273,10 +285,12 @@ textarea {
     .reviews {
       display: flex;
       justify-content: center;
+      background-color: #2a423a;
     }
 
     .reviews h2 {
       margin-bottom: 40px;
+      line-height: 1.125em;
     }
 
     .reviews h3 {
@@ -289,11 +303,13 @@ textarea {
     .mission {
       display: flex;
       justify-content: center;
+      background-color: #527158;
     }
 
     .contact-section {
       display: flex;
       justify-content: center;
+      background-color: #2a423a;
     }
 
     .contact-content p {
@@ -305,6 +321,7 @@ textarea {
     .faq {
       display: flex;
       justify-content: center;
+      background-color: #527158;
     }
 
     .faq .contect-wrapper {
@@ -317,18 +334,38 @@ textarea {
 
     .faq h2 {
       margin-bottom: 40px;
+      line-height: 1.125em;
     }
 
     .faq-content {
       margin-bottom: 50px;
     }
 
-    /*--------------- tablet styles ---------------*/
-
-
-
-
-    /*--------------- desktop styles ---------------*/
+    .faq-content h4 {
+      line-height: 1.5em;
+    }
+    
+    input[type=text] {
+      box-sizing: border-box;
+      width: 100%;
+      color: #2a423a;
+      font-style: italic;
+      padding: 1em;
+    }
+    
+    input[type=button] {
+      width: 100%;
+      padding: 20px 0;
+      margin-top: 20px;
+      background-color: #2a423a;
+      font-family: 'Poppins', Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 1.125em;
+      color: #e2e3ed;
+      border: none;
+      text-align: center;
+      text-transform: uppercase;
+    }
 
 /* ==========================================================================
    Helper classes
@@ -482,8 +519,17 @@ textarea {
         justify-content: space-between;
       }
 
+      .review h2 {
+        width:85%;
+      }
+
       .reviews article div {
           width: 49%;
+      }
+
+      .review h3 {
+          Width: 75%;
+          margin: 0;
       }
 
       /* footer */
@@ -491,14 +537,24 @@ textarea {
           width: 65%;
       }
 
-      .footer-content {
+       footer .footer-content {
           display: flex;
           justify-content: space-between;
           align-items: center;
+          flex-direction: row;
       }
 
       footer .contact {
           margin-bottom: 0;
+      }
+
+      footer h4 {
+        font-size: 1.125em;
+        margin-bottom: 40px;
+      }
+
+      footer P {
+        line-height: 1.5em;
       }
 
       footer .copyright {
@@ -506,10 +562,6 @@ textarea {
       }
 
       /*=============== About page ===============*/
-      .content-wrapper h2 {
-        display: flex;
-        justify-content: center;
-      }
 
       .mission-content {
         display: flex;
@@ -532,25 +584,28 @@ textarea {
         align-items: flex-start;
       }
 
+      .contact-content h4 {
+        font-size: 1.125em;
+      }
+
       /*=============== FAQ page ===============*/
 
       .faq .content-wrapper {
         justify-content: space-between;
       }
 
-      .faq .content-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-flow: row wrap;
-      }
-
       .faq-content {
-        width: 45%;
+        flex-basis: 45%;
       }
 
       .faq h2 {
         width: 100%;
+      }
+
+      .faq h4,
+      .faq p {
+        font-size: 1.875em;
+        line-height: 1.125em;
       }
     }
     
@@ -567,9 +622,23 @@ textarea {
          padding: 15px 0;
        }
 
+       h2 {
+         font-size: 2.25em;
+       }
+
+       h3, h4 {
+        font-size: 1.875em;
+       }
+
+       P {
+        font-size: 1.125em;
+        line-height: 1.333em;
+       }
+
        /* Hero Area */
        .hero-area h1 {
          width: 80%;
+         font-size: 3.75em;
        }
        
        /* Aside */
@@ -593,8 +662,16 @@ textarea {
        }
 
        /* Reviews */
+        .reviews h2 {
+          padding-bottom: 50px;
+        }
+
        .reviews article div {
          width: 42%;
+       }
+
+       footer h4 {
+         font-size: 1.875em;
        }
 
        /*================= About page =================*/
@@ -604,10 +681,21 @@ textarea {
          width: 95%;
        }
 
+       .contact-content h4 {
+          font-size: 1.875em;
+       }
+
        /*================= FAQ page =================*/
        .faq h2 {
          width: 100%;
+         font-size: 3em;
        }
+
+       .faq h4,
+        .faq p {
+          font-size: 1.125em;
+          line-height: 1.5em;
+        }
 }
 
     

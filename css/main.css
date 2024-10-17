@@ -228,6 +228,10 @@ textarea {
       justify-content: center;
     }
 
+    .content-wrapper h2 {
+      margin-bottom: 40px;
+    }
+
     .contact-section {
       display: flex;
       justify-content: center;
@@ -475,6 +479,13 @@ textarea {
         justify-content: space-between;
       }
 
+      .faq .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-flow: row wrap;
+      }
+
       .faq-content {
         width: 45%;
       }
@@ -483,6 +494,63 @@ textarea {
         width: 100%;
       }
     }
+    
+    @media only screen and (min-width: 1200px) {
+      /* Desktop styles here */
+
+      /* General styles */
+       .content-wrapper {
+           max-width: 960px;
+       }
+       
+       /* Header */
+       header {
+         padding: 15px 0;
+       }
+
+       /* Hero Area */
+       .hero-area h1 {
+         width: 80%;
+       }
+       
+       /* Aside */
+       aside .contect-wrapper {
+         justify-content: space-between;
+       }
+
+       aside .content-wrapper .form-description,
+       aside .content-wrapper .form {
+           width: 30%;
+       }
+
+       /* Features */
+
+       .features h2 {
+         width: 90%;
+       }
+
+       .features article {
+         flex-basis: 33%;
+       }
+
+       /* Reviews */
+       .reviews article div {
+         width: 42%;
+       }
+
+       /*================= About page =================*/
+
+       .mission h2,
+       .contact-section .content-wrapper h2 {
+         width: 95%;
+       }
+
+       /*================= FAQ page =================*/
+       .faq h2 {
+         width: 100%;
+       }
+}
+
     
 /* ==========================================================================
    Print styles.

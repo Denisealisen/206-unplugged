@@ -92,6 +92,69 @@ textarea {
     margin: 50px auto;
    }
 
+    /*--------------- General Styles ---------------*/
+
+    html {
+      font-size: 1rem;
+
+    }
+
+    body { 
+      font-family: 'open sans', sans-serif;
+      font-size: 1em;
+      line-height: 1.875em;
+
+    }
+
+    ul, ol { 
+      list-style-type: disc;
+    }
+
+    a {
+      text-decoration: none;
+      color: #e2e3ed;
+
+    }
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.875em;
+      line-height: 1.875em;
+
+    }
+
+    h3, h4 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.125em;
+
+
+    }
+
+    p {
+      font-size: 0.875em;
+      line-height: 1.125em;
+
+
+    }
+
+    img {
+
+    }
+
+    figure {
+
+    }
+
+    address {
+      font-style: normal;
+
+    }
+
+    .contect-wrapper {
+
+    }
+
+
    /*--------------- Base Header - Footer Styles ---------------*/
    
    header {
@@ -226,10 +289,6 @@ textarea {
     .mission {
       display: flex;
       justify-content: center;
-    }
-
-    .content-wrapper h2 {
-      margin-bottom: 40px;
     }
 
     .contact-section {

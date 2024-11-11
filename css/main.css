@@ -230,6 +230,10 @@ textarea {
     .hero-area {
       display: flex;
       justify-content: center;
+      background: url(../img/unplugged-retreat.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 500px;
     }
 
     .hero-area h1 {
@@ -256,6 +260,9 @@ textarea {
     .features {
       display: flex;
       justify-content: center;
+      background: url('../img/unplugged-retreat-features.jpg');
+      background-size: cover;
+      background-position: center;
     }
     
     .features h2 {

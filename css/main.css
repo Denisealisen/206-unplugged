@@ -103,7 +103,7 @@ textarea {
       font-family: 'open sans', sans-serif;
       font-size: 1em;
       text-align: left;
-      color: e2e3ed;
+      color: #e2e3ed;
     }
 
     ul, ol { 
@@ -284,6 +284,11 @@ textarea {
     .features p {
       text-align: center;
       margin: 0;
+    }
+
+    .features i {
+      font-size: 3.75em;
+      margin-bottom: 40px;
     }
 
 

@@ -553,7 +553,8 @@ textarea {
       /* Reviews */
       .reviews article {
         display: flex;
-        justify-content: space-between;
+        justify-content: right;
+        align-items: center;
       }
 
       .review h2 {
@@ -570,7 +571,7 @@ textarea {
       }
 
       img {
-          width: 100%;
+          width: 50%;
       }
 
       figure {
